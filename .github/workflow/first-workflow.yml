@@ -9,8 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Show date
+        run: date
 
-      - name: Run a simple command
-        run: echo "Hello, GitHub Actions!"
+      - name: show files
+        run: ls -la
+      
+      - name: show current flolder
+        run: pwd
