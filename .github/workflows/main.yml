@@ -1,0 +1,19 @@
+name: Simple CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show date
+        run: date
+
+      - name: show files
+        run: ls -la
+      
+      - name: show current flolder
+        run: pwd
